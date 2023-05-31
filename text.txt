@@ -1,0 +1,48 @@
+(Start screen sharing the browser with your website loaded)
+
+    Introduction:
+
+"Good day everyone. Today, I'm excited to show you the enhancements made on our domain information platform. 
+The focus of these updates is to enrich the details we provide for each domain, allowing our users to better understand and manage their domain statuses."
+
+    Domain details:
+
+"Let's start with the domain information page."
+
+(Navigate to a domain information page)
+
+"As you can see here, we've added several new columns to our table, 
+providing much more detailed information for each domain."
+
+    Validation started and expired dates:
+
+"One of the new features we've added is the display of the validation dates. 
+You can now see when the validation has been started, and also when it will expire."
+
+(Point out the columns that show validation dates)
+
+    Validation method:
+
+"Additionally, the method of validation is also presented in the table. 
+This gives you an idea of how the domain's validity was verified."
+
+(Point out the validation method column)
+
+    Wildcard allowed:
+
+"One more exciting feature we've added is the indication of whether the domain allows usage of wildcard SAN in the certificate. 
+If a domain name starts with a dot and the validation method is not File, it will be marked as 'Yes' in the 'Wildcard allowed' column, otherwise it will be 'No'."
+
+(Point out the Wildcard allowed column)
+
+    Search and sort:
+
+"Of course, all these new columns support our existing features of sorting and searching, 
+which helps users to manage domains effectively."
+
+(Show some sorting and searching examples)
+
+    Closing:
+
+"We hope that these enhancements provide a more detailed and clear understanding of domain data, and improve our users' ability to manage and control their domains.
+ As always, we're open to feedback and we'll continue to improve our platform for your needs. Thank you for your time!"
