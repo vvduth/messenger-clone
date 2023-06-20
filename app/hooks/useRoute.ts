@@ -3,7 +3,7 @@ import { useParams, usePathname } from "next/navigation";
 import { HiChat } from "react-icons/hi";
 import { HiArrowLeftOnRectangle, HiUsers } from "react-icons/hi2";
 import { signOut } from "next-auth/react";
-import useConversation from "./useCoversation";
+import useConversation from "./useConversation";
 
 const useRoute = () => {
   const pathName = usePathname();

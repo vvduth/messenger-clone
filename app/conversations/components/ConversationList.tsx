@@ -1,4 +1,5 @@
-import useConversation from '@/app/hooks/useCoversation'
+'use client'
+import useConversation from '@/app/hooks/useConversation'
 import { FullConversationType } from '@/app/types'
 import { Conversation } from '@prisma/client'
 import clsx from 'clsx'

@@ -1,48 +1,213 @@
-(Start screen sharing the browser with your website loaded)
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+    <!--
+		Modes:
+	-->
+    <!-- ###################################################################-->
+    <!-- view -->
+    <!-- ###################################################################-->
+    <view id="list.servercertificates.new">
+        <att id="appnaviid">1</att>
+        <att id="appnavname">list</att>
+        <att id="title" enabled="1" pointer="title.list.servercertificates.new" />
+        <att id="trackerpath" enabled="1" pointer="trackerpath.list.servercertificates.new" />
+    </view>
+    <!-- ###################################################################-->
+    <!-- viewdata -->
+    <!-- ###################################################################-->
+    <viewdata id="list.servercertificates.new">
+        <att id="additionalinfofields">
+            <val>
+                <att id="field">test</att>
+            </val>
+            <val>
+                <att id="field">test2</att>
+            </val>
+        </att>
+        <att id="casubscriberid" >
+            <dummy />
+        </att>
+        <att id="canrevoke">
+            <dummy />
+        </att>
+        <att id="apiurl">
+            <dummy/>
+        </att>
+        <att id="certificate_download_types">
+            <val>
+                <att id="downloadTypeId">PKCS12_ENCRYPTED_WITH_CHAIN</att>
+                <att id="askPin">true</att>
+                <att id="format">PKCS12</att>
+            </val>
+            <val>
+                <att id="downloadTypeId">PKCS12_ENCRYPTED_WITHOUT_CHAIN</att>
+                <att id="askPin">false</att>
+                <att id="format">PKCS12</att>
+            </val>
+            <val>
+                <att id="downloadTypeId">PEM_WITH_CHAIN</att>
+                <att id="askPin">false</att>
+                <att id="format">PEM</att>
+            </val>
+        </att>
+    </viewdata>
+    <!-- ###################################################################-->
+    <!-- localization -->
+    <!-- ###################################################################-->
+    <localization>
+        <!-- Titles -->
+        <text id="title.list.servercertificates.new">
+            <att lang="en">List of server certificates</att>
+            <att lang="fi">Listaa käyttäjävarmenteet</att>
+            <att lang="se">Lista användarcertifikat</att>
+        </text>
+        <!-- Trackerpaths -->
+        <text id="trackerpath.list.servercertificates.new">
+            <att lang="en">server certificates</att>
+            <att lang="fi">Käyttäjävarmenteet</att>
+            <att lang="se">Användarcertifikatet</att>
+        </text>
+        <!-- Texts -->
+        <text id="view.list.servercertificates.surname">
+            <att lang="en">Surname</att>
+            <att lang="fi">Sukunimi</att>
+            <att lang="se">Efternamn</att>
+        </text>
+        <text id="view.list.servercertificates.givenname">
+            <att lang="en">Givenname</att>
+            <att lang="fi">Etunimi</att>
+            <att lang="se">Förnamn</att>
+        </text>
+        <text id="view.list.servercertificates.mail">
+            <att lang="en">Email</att>
+            <att lang="fi">Sähköpostiosoite</att>
+            <att lang="se">Epost</att>
+        </text>
+        <text id="view.list.servercertificates.certificate">
+            <att lang="en">Certificate's information</att>
+            <att lang="fi">Varmenteen tiedot</att>
+            <att lang="se">Uppgifter om certifikat</att>
+        </text>
+        <text id="view.list.servercertificates.certificateserialnumber">
+            <att lang="en">Certificate serial number</att>
+            <att lang="fi">Varmenteen sarjanumero</att>
+            <att lang="se">Certifikatets serienummer</att>
+        </text>
+        <text id="view.list.servercertificates.status">
+            <att lang="en">Status</att>
+            <att lang="fi">Tila</att>
+            <att lang="se">Status</att>
+        </text>
+        <text id="view.list.servercertificates.organization">
+            <att lang="en">Organization</att>
+            <att lang="fi">Organisaatio</att>
+            <att lang="se">Organisation</att>
+        </text>
+        <text id="view.list.servercertificates.organizationalunit">
+            <att lang="en">Organizational unit</att>
+            <att lang="fi">Organisaatioyksikkö</att>
+            <att lang="se">Organisationsenhet</att>
+        </text>
+        <text id="view.list.servercertificates.subject">
+            <att lang="en">Subject</att>
+            <att lang="fi">Subjekti</att>
+            <att lang="se">Subjekt</att>
+        </text>
+        <text id="view.list.servercertificates.name">
+            <att lang="en">Certificate name (CN)</att>
+            <att lang="fi">Varmenteen nimi (CN)</att>
+            <att lang="se">Certifikatnamn (CN)</att>
+        </text>
+        <text id="view.list.servercertificates.caoperator">
+            <att lang="en">Registration officer</att>
+            <att lang="fi">Rekisteröijä</att>
+            <att lang="se">Registrant</att>
+        </text>
+        <text id="view.list.servercertificates.subjectserialnumber">
+            <att lang="en">Subject serial number</att>
+            <att lang="fi">Subjektin sarjanumero</att>
+            <att lang="se">Subjektets serienummer</att>
+        </text>
+        <text id="view.list.servercertificates.validto">
+            <att lang="en">Valid to</att>
+            <att lang="fi">Voimassa</att>
+            <att lang="se">Giltigt till</att>
+        </text>
+        <text id="view.list.servercertificates.issuer">
+            <att lang="en">Issuer</att>
+            <att lang="fi">Varmentaja</att>
+            <att lang="se">Utfärdare</att>
+        </text>
+        <text id="view.list.servercertificates.created">
+            <att lang="en">Created</att>
+            <att lang="fi">Luotu</att>
+            <att lang="se">Skapad</att>
+        </text>
+        <text id="view.list.servercertificates.organization">
+            <att lang="en">Organization</att>
+            <att lang="fi">Organisaatio</att>
+            <att lang="se">Organisation</att>
+        </text>
+        <text id="view.list.servercertificates.expiresin">
+            <att lang="en">Certificate expires in</att>
+            <att lang="fi">Varmenne vanhenee</att>
+            <att lang="se">Certifikatet löper ut om</att>
+        </text>
+        <text id="view.list.servercertificates.days">
+            <att lang="en">days</att>
+            <att lang="fi">päivässä</att>
+            <att lang="se">dagar</att>
+        </text>
 
-    Introduction:
+        <!-- Actions -->
+        <text id="view.list.servercertificates.revoke">
+            <att lang="en">Revoke</att>
+            <att lang="fi">Revokoi</att>
+            <att lang="se">Revokera</att>
+        </text>
 
-"Good day everyone. Today, I'm excited to show you the enhancements made on our domain information platform. 
-The focus of these updates is to enrich the details we provide for each domain, allowing our users to better understand and manage their domain statuses."
+        <text id="view.list.servercertificates.server_actions">
+            <att lang="en">Actions</att>
+            <att lang="fi">Toiminnot</att>
+            <att lang="se">Aktiviteter</att>
+        </text>
 
-    Domain details:
+        <text id="view.list.servercertificates.error.api.unavailable">
+            <att lang="en">Fetching certificate information failed. Please try again later or use the old listing.</att>
+            <att lang="fi">Varmenteiden tietojen hakeminen epäonnistui. Yritä myöhemmin uudelleen, tai käytä vanhaa listausta.</att>
+            <att lang="se">Fetching certificate information failed. Please try again later or use the old listing. swe</att>
+        </text>
 
-"Let's start with the domain information page."
+        <text id="view.list.servercertificates.error.noprivilege">
+            <att lang="en">Error 403 privilege</att>
+            <att lang="fi">Error 403 privilege fin</att>
+            <att lang="se">Error 403 privilege swe</att>
+        </text>
 
-(Navigate to a domain information page)
+        <text id="view.list.servercertificates.error.unauthorized">
+            <att lang="en">Your session has expired. Please log in again.</att>
+            <att lang="fi">Istuntosi on vanhentunut. Kirjaudu sisään uudelleen.</att>
+            <att lang="se">Your session has expired. Please log in again.swe</att>
+        </text>
 
-"As you can see here, we've added several new columns to our table, 
-providing much more detailed information for each domain."
+        <text id="view.list.servercertificates.download_failed">
+            <att lang="en">Certificate export failed. Please try again later or use the export functionality of the old listing.</att>
+            <att lang="fi">Varmenteiden tietojen vieminen csv-tiedostoon epäonnistui. Yritä myöhemmin uudelleen, tai käytä vanhan listauksen Vie-toimintoa.</att>
+            <att lang="se">Certificate export failed. Please try again later or use the export functionality of the old listing. swe</att>
+        </text>
 
-    Validation started and expired dates:
+    </localization>
+    <!-- ###################################################################-->
+    <!-- help -->
+    <!-- ###################################################################-->
+    <help />
+    <!-- ###################################################################-->
+    <!-- configuration -->
+    <!-- ###################################################################-->
+    <configuration />
+    <!-- if necessary remove the above and use this expanded version
+    <configuration>
+    </configuration>
+    -->
+</root>
 
-"One of the new features we've added is the display of the validation dates. 
-You can now see when the validation has been started, and also when it will expire."
-
-(Point out the columns that show validation dates)
-
-    Validation method:
-
-"Additionally, the method of validation is also presented in the table. 
-This gives you an idea of how the domain's validity was verified."
-
-(Point out the validation method column)
-
-    Wildcard allowed:
-
-"One more exciting feature we've added is the indication of whether the domain allows usage of wildcard SAN in the certificate. 
-If a domain name starts with a dot and the validation method is not File, it will be marked as 'Yes' in the 'Wildcard allowed' column, otherwise it will be 'No'."
-
-(Point out the Wildcard allowed column)
-
-    Search and sort:
-
-"Of course, all these new columns support our existing features of sorting and searching, 
-which helps users to manage domains effectively."
-
-(Show some sorting and searching examples)
-
-    Closing:
-
-"We hope that these enhancements provide a more detailed and clear understanding of domain data, and improve our users' ability to manage and control their domains.
- As always, we're open to feedback and we'll continue to improve our platform for your needs. Thank you for your time!"
