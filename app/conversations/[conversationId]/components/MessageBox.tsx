@@ -6,14 +6,15 @@ import clsx from "clsx";
 import { format } from "date-fns";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import ImageModal from "./ImageModal";
 interface MessageBoxProps {
   isLast?: boolean;
   data: FullMessageType;
 }
 const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
   const session = useSession();
-
+  const [imageModalOpen, setImageModalOpen] = useState(false)
   const isOwn = session?.data?.user?.email === data?.sender?.email;
 
   // remove the own user (user who sent the messge out of the seen list from the database)
@@ -45,8 +46,14 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
           </div>
         </div>
         <div className={message}>
+          <ImageModal 
+            src={data.image}
+            isOpen={imageModalOpen}
+            onClose={() => setImageModalOpen(false)}
+          />
           {data.image ? (
             <Image
+            onClick={() => setImageModalOpen(true)}
               alt="image"
               height={288}
               width={288}
